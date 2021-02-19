@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+<script src="js/utils.js" charset="utf-8" defer></script>
+<script src="js/home.js" charset="utf-8" defer></script>
+<title>My Gallery</title>
+</head>
+
+<body>
+	
+	<header>
+		<p id="username"></p>
+		<a href="Logout" class="button tertiary-style">Logout</a>
+	</header>
+	
+	<div class="home-wrapper">	
+		<div class="sidebar-container">		
+			<div id="gallery" class="sidebar gallery disabled">
+				<div class="title-container">
+					<i class="icon far fa-list-alt fa-fw"></i>
+					<h3 class="title">Gallery</h3>
+				</div>
+				<div class="sidebar-content">
+					<div id="albums">
+						<!-- Will be filled with .album-name (one for each album) -->
+					</div>
+					<div class="button primary-style disabled">Save Order</div>
+				</div>
+			</div>
+			
+			<div id="album" class="sidebar album disabled">
+				<div class="title-container">
+					<i class="icon far fa-folder fa-fw"></i>
+					<h3 class="title">Album</h3>
+				</div>
+				<div class="sidebar-content">
+					<div id="album-info" class="info-container">
+						<h3 class="title"><!-- Title of the selected album --></h3>
+						<h4 class="date"><!-- Date of the selected album --></h4>
+					</div>
+					<div id="slider">
+						<!-- Will be filled with .image-container (one each 5 images) -->
+					</div>
+				</div>
+			</div>			
+		</div>
+
+		<div id="main" class="main-container">		
+			<div id="guide" class="guide-container absolute-center disabled">
+				<h1><!-- Catchy title to tell something to the user --></h1>
+				<p><!-- Paragraph that explains what the user is supposed to do --></p>
+				<p><!-- Paragraph that exposes some functionalities --></p>
+			</div>
+			
+			<div id="content" class="main-content disabled">
+				<img class="main-image"/>
+				<div class="details-container">
+					<h2><!-- Title of the selected image --></h2>
+					<div class="details">
+						<div class="date">
+							<i class="far fa-calendar-alt icon"></i>
+							<h3 class="title"><!-- Date of the selected image --></h3>
+						</div>
+						<div class="album">
+							<i class="far fa-folder-open icon"></i>
+							<h3 class="title"><!-- Title of the selected album --></h3>
+						</div>
+					</div>
+					<p><!-- Description of the selected image --></p>
+				</div>				
+				<div class="comments-container disabled"><!-- Hidden if there's no comment -->
+					<h2>Comments</h2>
+					<!-- Will be filled with .comment (one for each comment) -->
+				</div>
+				<div class="form-container">
+					<h2>Leave your comment</h2>
+					<form action="#">
+						<textarea name="text" placeholder="Your comment..." required></textarea>
+						<button class="button primary-style" type="button">Send</button>
+					</form>
+				</div>
+			</div>		
+		</div>
+	</div>
+	
+</body>
+</html>

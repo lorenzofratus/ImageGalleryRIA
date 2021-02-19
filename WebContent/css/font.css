@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "Fira Sans";
+	font-weight: 400;
+	src: url(../font/fira-sans/FiraSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-weight: 500;
+	src: url(../font/fira-sans/FiraSans-Medium.ttf);
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-weight: 600;
+	src: url(../font/fira-sans/FiraSans-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-weight: 700;
+	src: url(../font/fira-sans/FiraSans-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 200;
+	src: url(../font/poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 300;
+	src: url(../font/poppins/Poppins-Light.ttf);
+}
